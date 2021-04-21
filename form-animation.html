@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			background-image:url("../Sample Pictures/1.jpg");
+		}
+
+		form{
+			width: 30%;
+			height: 320px;
+			background: rgb(221,217,217);
+			/*margin: 3% 35%;*/
+			position: absolute;
+			left: -35%;
+			top: 18%;
+			/*top:18%;*/
+			padding: 5% 3%;
+			transition: 0.3s;
+
+		}
+		input[type="text"]{
+			width: 100%;
+			border: none;
+			border: 1px solid black;
+		}
+		.close{
+			font-size: 30px;
+			position: absolute;
+			top: 0;
+			right: 4%;
+			color: red;
+			cursor: pointer;
+		}
+		.signup{
+			display: inline;
+			background: red;
+			color: white;
+			transform: rotate(90deg);
+			position: absolute;
+			top: 43%;
+			cursor: pointer;
+			left: -1%;
+			padding: 6px 20px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<span class="signup" onclick="showform();">signup</span>
+	<form id="form">
+		<span class="close" onclick="closeform();">&times;</span>
+		<div class="form-group">
+			<label for="fname">First name</label>
+			<input type="text" name="fname">
+			<label for="lname">Last name</label>
+			<input type="text" name="lname">
+			<label for="email">Email</label>
+			<input type="text" name="email">
+			<label for="Password">Password</label>
+			<input type="text" name="Password">
+			<label for="cpasword">Confirm Password</label>
+			<input type="text" name="fname">
+			<center><button type="button">Login</button></center>
+		</div>
+	</form>
+
+</body>
+</html>
+<script type="text/javascript">
+	var form_ele=document.getElementById("form");
+	function showform(){
+		//form_ele.style.display="block";
+		form_ele.style.left="35%";
+	}
+	function closeform(){
+		//form_ele.style.display="none";
+		form_ele.style.left="-35%";
+	}
+
+
+</script>

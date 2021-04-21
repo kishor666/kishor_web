@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 5% 30%;
+		}
+		.progressbar{
+			width: 50%;
+			height: 40px;
+			border: 1px solid rgb(221,217,217);
+		}
+		.progress{
+			width: 0%;
+			height: inherit;
+			/*background: pink;*/
+			background: skyblue;
+			transition: width 0.2s;
+			text-align: center;
+			padding-top: 6px;
+			color: white;
+		}
+</style>
+</head>
+<body>
+	<div class="progressbar">
+		<div class="progress" id="progress"></div>
+		
+	</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	var progress_ele=document.getElementById("progress");
+
+	var n=1;
+	setInterval(download,100);
+	function download(){
+		if(n<=100){
+		    progress_ele.style.width=n+"%";
+		    progress_ele.innerHTML=n+"%";
+
+       if(n>=100){
+           progress_ele.innerHTML="Downloaded";
+           progress_ele.style.color="red";
+       }
+       n++;
+   }
+}
+</script>
+
+
+
+
+
+
+
+
+
