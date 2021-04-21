@@ -1,0 +1,120 @@
+<!DOCTYPE htm"l>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 100%;
+			height: 1200px;
+			border: 1px solid red;
+		}
+		.row{
+			width: 100%;
+		}
+		.header{
+			width: 100%;
+			height: 920px;
+			border:1px solid red;
+			background-image:url("../Sample Pictures/1.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 420%;
+			margin-left: 5% 20%;
+			/*object-fit:cover;*/
+		}
+		.menubar{
+			width: 100%;
+			height:10%;
+			background: red; 
+			font-size: 35px;
+			padding-top: 1%;
+			padding-left: 2%;
+			color: white;
+		}
+		.data{
+			display: inline-block;
+			color: white;
+			float: right;
+			border:2px solid white;
+			padding: 4px 10px;
+			border-radius: 3px;
+			margin-top: 4px;
+			margin-right: 10px;
+		}
+		.data2{
+			padding-left: 15%;
+			padding-top: 15%;
+			color: white;
+			font-size: 60px;
+		}
+		form{
+			padding-left: 15%;
+			font-size: 35px;
+			height: 135px;
+		}
+		select{
+			width: 20%;
+			height: 35%;
+			font-size: 18px;
+			letter-spacing: 2px;
+		}
+		input[type="text"]{
+			width: 50%;
+			height: 45px;
+		}
+		button{
+			border:none;
+			border:1px solid rgb(221,217,217);
+			height: 44px;
+			box-sizing: 30px;
+			background: white;
+			font-size: 18px;
+			letter-spacing: 2px;
+
+		}
+		.data:hover{
+			cursor: pointer;
+			background-color: yellow;
+			color: red;
+		}
+		button:hover{
+			cursor: pointer;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="header">
+				<div class="menubar">
+					<b>Zomato</b>
+				<div class="data">Create an account</div>
+				<div class="data">Login</div>
+				<div class="data2">Find the restaurants,Cafes,and Bars in Almora</div>
+				<form>
+					<select>
+						<option>Delhi</option>
+						<option>Gujarat</option>
+						<option>Mumbai</option>
+					</select>
+					<input type="text" name="search">
+					<button type="button">Search</button>
+				</form>
+			</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
